@@ -14,39 +14,39 @@ In Tic-Tac-Toe, the Minimax algorithm explores all possible moves to determine t
 
 ## Explanation of the Code
 
-### Initial Setup
+### 1) Initial Setup
 
 The constants and initial state of the board are defined at the beginning
 
-### Drawing the Board
+### 2) Drawing the Board
 
 The `draw_board` function prints the current state of the board
 
-### Player Turn
+### 3) Player Turn
 
 The `player` function determines whose turn it is
 
-### Possible Actions
+### 4) Possible Actions
 
 The `actions` function lists all possible moves
 
-### Resulting Board State
+### 5) Resulting Board State
 
 The `result` function returns the board state after a move
 
-### Checking for a Winner
+### 6) Checking for a Winner
 
 Helper functions `get_horizontal_winner`, `get_vertical_winner`, and `get_diagonal_winner` check for winning lines. The `winner` function integrates these
 
-### Terminal State and Utility
+### 7) Terminal State and Utility
 
 The `terminal` function checks if the game is over, and the `utility` function evaluates the board
 
-### Minimax Algorithm with Alpha-Beta Pruning
+### 8) Minimax Algorithm with Alpha-Beta Pruning
 
 The core logic for the AI is implemented in the `minimax`, `max_value`, and `min_value` functions
 
-### Playing the Game
+### 9) Playing the Game
 
 The `play_game` function manages the game loop, allowing a human player to compete against the AI
 
