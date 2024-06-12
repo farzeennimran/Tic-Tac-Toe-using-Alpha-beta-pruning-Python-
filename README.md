@@ -16,87 +16,39 @@ In Tic-Tac-Toe, the Minimax algorithm explores all possible moves to determine t
 
 ### Initial Setup
 
-The constants and initial state of the board are defined at the beginning:
-```python
-X = "X"
-O = "O"
-D = "D"
-EMPTY = None
+The constants and initial state of the board are defined at the beginning
 
-def initial_state():
-    return [[EMPTY, EMPTY, EMPTY],
-            [EMPTY, EMPTY, EMPTY],
-            [EMPTY, EMPTY, EMPTY]]
-```
 ### Drawing the Board
 
-The `draw_board` function prints the current state of the board:
-```python
-def draw_board(board):
-    ...
-```
+The `draw_board` function prints the current state of the board
 
 ### Player Turn
 
-The `player` function determines whose turn it is:
-```python
-def player(board):
-    ...
-```
+The `player` function determines whose turn it is
 
 ### Possible Actions
 
-The `actions` function lists all possible moves:
-```python
-def actions(board):
-    ...
-```
+The `actions` function lists all possible moves
 
 ### Resulting Board State
 
-The `result` function returns the board state after a move:
-```python
-def result(board, action):
-    ...
-```
+The `result` function returns the board state after a move
 
 ### Checking for a Winner
 
-Helper functions `get_horizontal_winner`, `get_vertical_winner`, and `get_diagonal_winner` check for winning lines. The `winner` function integrates these:
-```python
-def winner(board):
-    ...
-```
+Helper functions `get_horizontal_winner`, `get_vertical_winner`, and `get_diagonal_winner` check for winning lines. The `winner` function integrates these
 
 ### Terminal State and Utility
 
-The `terminal` function checks if the game is over, and the `utility` function evaluates the board:
-```python
-def terminal(board):
-    ...
-def utility(board):
-    ...
-```
+The `terminal` function checks if the game is over, and the `utility` function evaluates the board
 
 ### Minimax Algorithm with Alpha-Beta Pruning
 
-The core logic for the AI is implemented in the `minimax`, `max_value`, and `min_value` functions:
-```python
-def minimax(board, alpha, beta):
-    ...
-def max_value(board, alpha, beta):
-    ...
-def min_value(board, alpha, beta):
-    ...
-```
+The core logic for the AI is implemented in the `minimax`, `max_value`, and `min_value` functions
 
 ### Playing the Game
 
-The `play_game` function manages the game loop, allowing a human player to compete against the AI:
-```python
-def play_game():
-    ...
-```
+The `play_game` function manages the game loop, allowing a human player to compete against the AI
 
 ## Conclusion
 
